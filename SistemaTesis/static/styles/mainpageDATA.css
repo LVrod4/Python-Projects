@@ -1,0 +1,74 @@
+.page {
+    width: 216mm;
+    height: 279mm;
+    font-family: Arial;
+}
+
+body {
+    background-repeat: no-repeat;
+    background-size: 820px;
+}
+
+
+.TextBody {
+    line-height:35px;
+    font-size: 12pt;
+    text-align: justify;
+    margin-right: 4mm;
+    text-indent: 0.5in;
+}
+
+p {
+    padding-top: 15px;
+}
+
+body h4 {
+    line-height:15px;
+    font-size: 22pt;
+    text-align: center;
+}
+
+.EscuelaMem {
+    line-height: 25px;
+    font-size: 18pt;
+    text-align: center;
+}
+
+.Observacion {
+    padding-top: 20px;
+    text-align: center;
+    font-size: 12px;
+}
+
+.Firma {
+    padding-top: 10px;
+    line-height:15px;
+    font-size: 12pt;
+    text-align: center;
+}
+
+table {
+    text-align: center;
+    border: 15px double;
+}
+
+th {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    border: 1px solid;
+}
+
+td {
+    padding: 18px;
+    text-align: center;
+    border: 1px solid;
+}
+
+
+footer {
+    text-align: center;
+    color: grey;
+    font-size: 10px;
+    line-height: 15px;
+
+}

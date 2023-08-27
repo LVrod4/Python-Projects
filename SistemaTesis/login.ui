@@ -1,0 +1,277 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1000</width>
+    <height>520</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <property name="enabled">
+    <bool>true</bool>
+   </property>
+   <layout class="QVBoxLayout" name="verticalLayout_2">
+    <property name="spacing">
+     <number>0</number>
+    </property>
+    <property name="leftMargin">
+     <number>0</number>
+    </property>
+    <property name="topMargin">
+     <number>0</number>
+    </property>
+    <property name="rightMargin">
+     <number>0</number>
+    </property>
+    <property name="bottomMargin">
+     <number>0</number>
+    </property>
+    <item>
+     <widget class="QWidget" name="Background" native="true">
+      <property name="styleSheet">
+       <string notr="true"/>
+      </property>
+      <widget class="QLineEdit" name="UserIN">
+       <property name="geometry">
+        <rect>
+         <x>590</x>
+         <y>180</y>
+         <width>241</width>
+         <height>33</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: transparent;
+color: #D9ED92;
+font: 17pt &quot;Arial&quot;;
+border: 5px dashed Transparent;
+border-bottom-color: #00241b;</string>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+       <property name="maxLength">
+        <number>10</number>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+       <property name="placeholderText">
+        <string>Cédula</string>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="PassIN">
+       <property name="geometry">
+        <rect>
+         <x>590</x>
+         <y>260</y>
+         <width>241</width>
+         <height>33</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: transparent;
+color: #D9ED92;
+font: 17pt &quot;Arial&quot;;
+border: 5px dashed Transparent;
+border-bottom-color: #00241b;</string>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+       <property name="maxLength">
+        <number>10</number>
+       </property>
+       <property name="echoMode">
+        <enum>QLineEdit::Password</enum>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+       <property name="placeholderText">
+        <string>Contraseña</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="LogIn_Btn">
+       <property name="geometry">
+        <rect>
+         <x>540</x>
+         <y>340</y>
+         <width>151</width>
+         <height>41</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QPushButton#LogIn_Btn{
+background-color: #006BA6;
+border-radius: 10px;
+font: bold 14pt &quot;Arial&quot;;
+color: #FCFFE7;
+}
+
+QPushButton#LogIn_Btn:pressed{
+background-color: #3E6D9C;
+color: #F0F0F0
+}</string>
+       </property>
+       <property name="text">
+        <string>Ingresar</string>
+       </property>
+       <property name="autoDefault">
+        <bool>false</bool>
+       </property>
+       <property name="default">
+        <bool>true</bool>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="Sign_Btn">
+       <property name="geometry">
+        <rect>
+         <x>740</x>
+         <y>340</y>
+         <width>151</width>
+         <height>41</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QPushButton#Sign_Btn{
+background-color: #ffdb57;
+border-radius: 10px;
+font: bold 14pt &quot;Arial&quot;;
+color: #00000;
+}
+
+QPushButton#Sign_Btn:pressed{
+background-color: #3E6D9C;
+color: #F0F0F0
+}</string>
+       </property>
+       <property name="text">
+        <string>Regístrese</string>
+       </property>
+       <property name="default">
+        <bool>true</bool>
+       </property>
+      </widget>
+      <widget class="QLabel" name="Bienv_title">
+       <property name="geometry">
+        <rect>
+         <x>420</x>
+         <y>50</y>
+         <width>581</width>
+         <height>51</height>
+        </rect>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>16777215</width>
+         <height>120</height>
+        </size>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">font: bold 35pt &quot;Arial Black&quot;;
+color: #ffffff;</string>
+       </property>
+       <property name="text">
+        <string>Bienvenido!</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+       <property name="wordWrap">
+        <bool>false</bool>
+       </property>
+       <property name="margin">
+        <number>1</number>
+       </property>
+      </widget>
+      <widget class="QLabel" name="Bienv_title_3">
+       <property name="geometry">
+        <rect>
+         <x>424</x>
+         <y>100</y>
+         <width>571</width>
+         <height>51</height>
+        </rect>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>16777215</width>
+         <height>120</height>
+        </size>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">font: 63 bold 22pt &quot;Arial Black&quot;;
+color: #b7e4c7;</string>
+       </property>
+       <property name="text">
+        <string>Inicio de Sesión</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+       <property name="wordWrap">
+        <bool>false</bool>
+       </property>
+       <property name="margin">
+        <number>1</number>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label">
+       <property name="geometry">
+        <rect>
+         <x>490</x>
+         <y>440</y>
+         <width>501</width>
+         <height>61</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">font: 12pt &quot;Arial&quot;;
+color: #FFFFFF;</string>
+       </property>
+       <property name="text">
+        <string>Autor: Br. Laura Rodriguez
+Ingeniería de Sistemas
+I-2023</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_2">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>0</y>
+         <width>1000</width>
+         <height>520</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;img src=&quot;/home/Laura/Escritorio/SISTEMA 1.0/icons/back1000520.png&quot; width=&quot;1000&quot; height=&quot;520&quot;/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+       </property>
+      </widget>
+      <zorder>label_2</zorder>
+      <zorder>UserIN</zorder>
+      <zorder>PassIN</zorder>
+      <zorder>LogIn_Btn</zorder>
+      <zorder>Sign_Btn</zorder>
+      <zorder>Bienv_title</zorder>
+      <zorder>Bienv_title_3</zorder>
+      <zorder>label</zorder>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

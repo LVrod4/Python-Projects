@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CONSTANCIA DE RETENCIÓN</title>
+    <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='styles/mainpageTB.css') }}">
+    <!--<link rel= "stylesheet" type= "text/css" href= "/static/styles/mainpageTB.css">-->
+   
+</head>
+<div class="page">
+    <header>
+        <img src="{{ url_for('static', filename='IMG/logo_MPPE.png') }}" width="25%">
+        <!--<img src="/static/IMG/logo_MPPE.png" width="30%">-->
+    </header>
+
+    <body>
+
+        <div class="EscuelaMem">
+            <h5>UNIDAD EDUCATIVA NACIONAL <br>
+                “Benedicto Mármol” <br>
+                Punto Fijo - Estado Falcón</h5>
+        </div>
+
+        <h4><strong>CONSTANCIA DE RETENCIÓN<br>
+                EN EL NIVEL DE EDUCACIÓN PRIMARIA
+            </strong>
+        </h4>
+        <div class="TextBody">
+            <p>
+                Quién suscribe, <strong>Licda. Francis Jacqueline Molina Monteverde</strong> 
+                titular de la Cédula de Identidad N° <strong>V-13.077.169</strong>, 
+                Director(a) de la <strong>U.E.N. “Benedicto Mármol”</strong>, 
+                ubicado en la Avenida Dr. Portillo Esquina Calle 03 Urb. Jorge Hernández, Punto Fijo, 
+                Estado Falcón, Municipio Carirubana, Parroquia Norte, adscrito a la Zona Educativa del 
+                Estado Falcón, certifica por medio de la presente que el o la Estudiante <strong><u>{{ StudName }} {{ StudLast }}</u></strong> 
+                titular de la Cédula de Identidad Nº 
+                <strong><u>{{ IType }}{{ INumber }}</u></strong>, en fecha <strong><u>{{ today.strftime('%d/%m/%Y') }}</u></strong> 
+                cursó el <strong><u>{{ gradoRETE }}</u></strong> durante el período 
+                escolar <strong><u>{{ PastYear }}-{{ CurrentYear }}</u></strong>, donde no alcanzó las competencias
+                previstas para el grado correspondiéndole el literal <strong><u>E</u></strong>, siendo retenido(a) en el: 
+                <strong><u>{{ gradoRETE }}</u></strong>, previo cumplimiento de los requisitos exigidos en la normativa legal vigente.
+            </p>    
+            <p>
+                Constancia que se expide en Punto Fijo a los <strong><u>{{ today.strftime('%d') }}</u></strong> días del mes de <strong><u>{{ today.strftime('%B') }}</u></strong> del <strong><u>{{ today.strftime('%Y') }}</u></strong>    
+            </p>   
+                    
+                    <br>
+
+                <table style="width:85%; height:18%">
+                    <tr>
+                    <th>PLANTEL<br>
+                        PARA VALIDEZ A NIVEL NACIONAL
+                    </th>
+                    <th>
+                        ZONA EDUCATIVA<br>
+                        PARA VALIDEZ A NIVEL INTERNACIONAL
+                    </th>
+                    <tr>
+                        <td>DIRECTOR(A):</td>
+                        <td>DIRECTOR(A):</td>
+                    </tr>
+                    <tr>
+                        <td>Nombre y Apellido: Francis J. Molina M.</td>
+                        <td>Nombre y Apellido: </td>
+                    </tr>
+                    <tr>
+                        <td>Número de C.I: V-13.077.169</td>
+                        <td>Número de C.I: </td>
+                    </tr>
+                    <tr>
+                        <td>Firma y Sello:</td>
+                        <td>Firma y Sello:</td>
+                    </tr>
+                </table>
+        </div>
+    
+        
+            <div class="Observacion">
+                <strong>
+                    Constancia válida sólo con firma y sello húmedo
+                </strong>
+            </div>
+    
+            <footer>
+                <i>
+                    Página 1/1 
+                    <br>
+                    Fecha: {{ Hour }}
+                </i>
+                
+            </footer>
+        
+    </body>
+
+</div>
+
+
+</div>
+<!--<script>window.print();</script>-->
+
+</html>

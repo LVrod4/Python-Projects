@@ -1,0 +1,53 @@
+.page {
+    width: 216mm;
+    height: 279mm;
+    font-family: Arial;
+}
+
+.TextBody {
+    line-height:35px;
+    font-size: 12pt;
+    text-align: justify;
+    margin-right: 4mm;
+    text-indent: 0.5in;
+}
+
+body h3 {
+    font-size: 12pt;
+    text-align: center;
+}
+
+body h4 {
+    padding-top: 35px;
+    padding-bottom: 35px;
+    line-height:30px;
+    font-size: 18pt;
+    text-align: center;
+}
+
+.EscuelaMem {
+    line-height:25px;
+    font-size: 16pt;
+    text-align: justify;
+}
+
+.Observacion {
+    padding-top: 85px;
+    text-align: center;
+    font-size: 12px;
+}
+
+.Firma {
+    padding-top: 40px;
+    line-height:15px;
+    font-size: 12pt;
+    text-align: center;
+}
+
+footer {
+    text-align: center;
+    color: grey;
+    font-size: 10px;
+    line-height: 15px;
+
+}

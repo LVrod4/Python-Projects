@@ -1,0 +1,14 @@
+<RCC>
+  <qresource prefix="logo">
+    <file>../logo.png</file>
+  </qresource>
+  <qresource prefix="escuela">
+    <file>ESCUELA.jpg</file>
+  </qresource>
+  <qresource prefix="logofondo">
+    <file>logofondo.png</file>
+  </qresource>
+  <qresource prefix="arrow">
+    <file>chevron-down-svgrepo-com.png</file>
+  </qresource>
+</RCC>

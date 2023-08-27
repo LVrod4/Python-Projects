@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CONSTANCIA DE RETIRO</title>
+    <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='styles/mainpage.css') }}">
+    <!--<link rel= "stylesheet" type= "text/css" href= "/static/styles/mainpage.css">-->
+   
+</head>
+<div class="page">
+    <header>
+        <img src="{{ url_for('static', filename='IMG/logo_MPPE.png') }}" width="25%">
+        <!--<img src="/static/IMG/logo_MPPE.png" width="30%">-->
+    </header>
+
+    <body>
+
+        <div class="EscuelaMem">
+            <h5>UNIDAD EDUCATIVA NACIONAL <br>
+                “Benedicto Mármol” <br>
+                Punto Fijo - Estado Falcón</h5>
+        </div>
+
+        <h4><strong>CONSTANCIA DE RETIRO</strong>
+        </h4>
+        <div class="TextBody">
+            <p>
+                Quién suscribe, <strong>Licda. Francis Jacqueline Molina Monteverde</strong> 
+                titular de la Cédula de Identidad N° <strong>V-13.077.169</strong>, 
+                Director(a) de la <strong>U.E.N. “Benedicto Mármol”</strong>, 
+                ubicado en la Avenida Dr. Portillo Esquina Calle 03 Urb. Jorge Hernández, Punto Fijo, 
+                Estado Falcón, Municipio Carirubana. Por medio de la presente hace constar que el o la Estudiante 
+                <strong><u>{{ StudName }} {{ StudLast }}</u></strong> 
+                titular de la Cédula de Identidad/Cédula Escolar Nº <strong><u>{{ IType }}{{ INumber }}</u></strong>, 
+                cursó estudios correspondientes al <strong><u>{{ grado }}</u></strong>, durante el período 
+                escolar <strong><u>{{ PastYear }}-{{ CurrentYear }}</u></strong>, se retira del plantel el
+                día <strong><u>{{today.strftime('%d/%m/%Y')}}</u></strong> por la siguiente causa: <strong><u>{{ razon }}</u></strong>
+            </p>    
+            <p>
+                Constancia que se expide a petición de la parte interesada en Punto Fijo a los <strong><u>{{ today.strftime('%d') }}</u></strong> días del mes de <strong><u>{{ today.strftime('%B') }}</u></strong> del <strong><u>{{ today.strftime('%Y') }}</u></strong>    
+            </p> 
+            <br>
+            <br>  
+        </div>
+    
+        <div class="Firma">
+            <p>_________________________</p>
+            <p>Lcda. Francis Molina <br>
+            Director(a)
+            </p>
+        </div>
+
+        <div class="Observacion">
+            <strong>
+            Constancia válida sólo con firma y sello húmedo
+            </strong>
+        </div>
+
+    </body>
+
+    
+
+
+
+<footer>
+    <i>
+        Página 1/1 
+        <br>
+        Fecha: {{ Hour }}
+    </i>
+    
+</footer>
+
+
+
+</div>
+
+
+</div>
+<!--<script>window.print();</script>-->
+
+</html>

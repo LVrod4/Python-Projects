@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FICHA DEL ESTUDIANTE</title>
+    <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='styles/mainpageDATA.css') }}">
+    <!--<link rel= "stylesheet" type= "text/css" href= "/static/styles/mainpageDATA.css">-->
+   
+</head>
+<div class="page">
+    <body style="background-image: url('/static/IMG/logo-back2.png')">    
+        <div class="EscuelaMem">
+            <h5>UNIDAD EDUCATIVA NACIONAL <br>
+                “Benedicto Mármol” <br>
+                Punto Fijo - Estado Falcón</h5>
+        </div>
+
+        <h4><strong>FICHA DEL ESTUDIANTE</strong>
+        </h4>
+        <table>
+                <tr>
+                    <th colspan="6">Datos del Estudiante</th>
+                </tr>
+                <tr>
+                    <td><strong>Cédula / Cédula Escolar</strong></td>
+                    <td><strong>Nombre y Apellido</strong></td>
+                    <td><strong>Fecha de Nacimiento</strong></td>
+                    <td><strong>Estado de Nacimiento</strong></td>
+                    <td><strong>Municipio de Nacimiento</strong></td>
+                </tr>
+                <tr>
+                    <td>{{ IType }}{{ INumber }}</td>
+                    <td>{{ StudName }} {{ StudLast }}</td>
+                    <td>{{ StudB}}</td>
+                    <td>{{ StudSt }}</td>
+                    <td>{{ StudCt }}</td>
+                </tr>
+                <tr>
+                    <th colspan="6">Datos del Representante</th>
+                </tr>
+                <tr>
+                    <td><strong>Cédula</strong></td>
+                    <td><strong>Nombre y Apellido</strong></td>
+                    <td><strong>Teléfono</strong></td>
+                    <td colspan="6"><strong>Dirección</strong></td>
+                </tr>
+                <tr>
+                    <td>{{ RepVE }}{{ RepCed }}</td>
+                    <td>{{ RepN }} {{ RepL }}</td>
+                    <td>{{ RepTlf }}</td>
+                    <td colspan="6">{{ RepD }}</td>
+                </tr>
+            </table>
+        
+        
+        <div class="TextBody">
+            <p>
+                Información que se expide a petición de la parte interesada en Punto Fijo a los <strong><u>{{ today.strftime('%d') }}</u></strong> días del mes de <strong><u>{{ today.strftime('%B') }}</u></strong> del <strong><u>{{ today.strftime('%Y') }}</u></strong>    
+            </p> 
+        </div>
+    
+        <div class="Firma">
+                <p>_________________________</p>
+                <p>Lcda. Francis Molina <br>
+                Director(a)
+                </p>
+            </div>
+       
+        <div class="Observacion">
+            <strong>
+                Constancia válida sólo con firma y sello húmedo
+            </strong>
+        </div>
+
+        <footer>
+            <i>
+                Página 1/1 
+                <br>
+                Fecha: {{ Hour }}
+            </i>
+            
+        </footer>
+
+    </body>
+
+</div>
+<!--<script>window.print();</script>-->
+
+</html>
